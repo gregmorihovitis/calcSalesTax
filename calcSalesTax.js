@@ -32,6 +32,7 @@ function calculateSalesTax(salesData, taxRates){
     companyName = salesData[i].name;
     companySalesTotals = calcSales(salesData[i].sales)
 
+    //Can be cleaned up by using nested for loops, doing tax for each value before adding to total.
 
     if(!salesResults[companyName]){
       salesResults[companyName] = {
